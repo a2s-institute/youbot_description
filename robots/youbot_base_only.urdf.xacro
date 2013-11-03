@@ -5,27 +5,27 @@
        xmlns:xacro="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
        name="youbot" >
   
-  <!-- The following included files set up definitions of parts of the robot body -->
+  <!-- The following xacro:included files set up definitions of parts of the robot body -->
   <!-- misc common stuff? -->
-  <include filename="$(find youbot_description)/urdf/common.xacro" />
+  <xacro:include filename="$(find youbot_description)/urdf/common.xacro" />
   
   <!-- youbot base -->
-  <include filename="$(find youbot_description)/urdf/youbot_base/base.urdf.xacro" />
+  <xacro:include filename="$(find youbot_description)/urdf/youbot_base/base.urdf.xacro" />
  
-  <!-- generic simulator_gazebo plugins for starting mechanism control, ros time, ros battery -->
-  <include filename="$(find youbot_description)/gazebo/gazebo.urdf.xacro" />
+  <!-- controller manager -->
+  <xacro:include filename="$(find youbot_description)/controller/ros_controller.urdf.xacro" />
   
   <!-- materials for visualization -->
-  <include filename="$(find youbot_description)/urdf/materials.urdf.xacro" />
+  <xacro:include filename="$(find youbot_description)/urdf/materials.urdf.xacro" />
 						     
 
-  <!-- Now we can start using the macros included above to define the actual youbot -->
+  <!-- Now we can start using the macros xacro:included above to define the actual youbot -->
 
   <!-- The first use of a macro.  This one was defined in base.urdf.xacro above.
        A macro like this will expand to a set of link and joint definitions, and to additional
        Gazebo-related extensions (sensor plugins, etc).  The macro takes an argument, name, 
        that equals "base", and uses it to generate names for its component links and joints 
-       (e.g., base_link).  The included origin block is also an argument to the macro.  By convention, 
+       (e.g., base_link).  The xacro:included origin block is also an argument to the macro.  By convention, 
        the origin block defines where the component is w.r.t its parent (in this case the parent 
        is the world frame). For more, see http://www.ros.org/wiki/xacro -->
 

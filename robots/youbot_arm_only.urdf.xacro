@@ -7,19 +7,19 @@
   
   <!-- The following included files set up definitions of parts of the robot body -->
   <!-- misc common stuff? -->
-  <include filename="$(find youbot_description)/urdf/common.xacro" />
+  <xacro:include filename="$(find youbot_description)/urdf/common.xacro" />
 
   <!-- materials for visualization -->
-  <include filename="$(find youbot_description)/urdf/materials.urdf.xacro" />
+  <xacro:include filename="$(find youbot_description)/urdf/materials.urdf.xacro" />
 
   <!-- youbot arm -->
-  <include filename="$(find youbot_description)/urdf/youbot_arm/arm.urdf.xacro" />
+  <xacro:include filename="$(find youbot_description)/urdf/youbot_arm/arm.urdf.xacro" />
 
   <!-- youbot arm -->
-  <include filename="$(find youbot_description)/urdf/youbot_gripper/gripper.urdf.xacro" />
+  <xacro:include filename="$(find youbot_description)/urdf/youbot_gripper/gripper.urdf.xacro" />
  
-  <!-- generic simulator_gazebo plugins for starting mechanism control, ros time, ros battery -->
-  <include filename="$(find youbot_description)/gazebo/gazebo.urdf.xacro" />
+  <!-- controller manager -->
+  <xacro:include filename="$(find youbot_description)/controller/ros_controller.urdf.xacro" />
   
   <!-- Now we can start using the macros included above to define the actual youbot -->
 
@@ -31,18 +31,21 @@
        the origin block defines where the component is w.r.t its parent (in this case the parent 
        is the world frame). For more, see http://www.ros.org/wiki/xacro -->
 
-<!-- foot for arm-->
+  <!-- foot for arm-->
   <link name="base_link">
     <inertial>
 		   <origin xyz="0 0 0" rpy="0 0 0"/>
 		   <mass value="10.0"/>
 		   <inertia ixx="0.1"  ixy="0"  ixz="0" iyy="0.1" iyz="0" izz="0.1" />
     </inertial>
-    </link>
+  </link>
+  
   <xacro:youbot_arm name="arm" parent="base_link">
     <origin xyz="0 0 0" rpy="0 0 0" />
   </xacro:youbot_arm>
+
   <xacro:youbot_gripper name="gripper" parent="arm_link_5">
     <origin xyz="0 0 0" rpy="0 0 0" />
   </xacro:youbot_gripper>
+
 </robot>
