@@ -27,6 +27,8 @@
   <!-- materials for visualization -->
   <xacro:include filename="$(find youbot_description)/urdf/materials.urdf.xacro" />
 						     
+  <!-- sensors -->
+  <xacro:include filename="$(find youbot_description)/urdf/sensors/hokuyo_urg04_laser.urdf.xacro"/>
 
   <!-- Now we can start using the macros xacro:included above to define the actual youbot -->
 
@@ -62,5 +64,10 @@
   <xacro:youbot_gripper name="gripper_2" parent="arm_2_link_5">
     <origin xyz="0 0 0" rpy="0 0 0" />
   </xacro:youbot_gripper>
+
+  <!-- base laser front -->
+  <xacro:hokuyo_urg04_laser name="${name}_laser_front" parent="${name}" ros_topic="scan_front" update_rate="10" min_angle="-1.57" max_angle="1.57">
+    <origin xyz="0.3 0 -0.03" rpy="0 0 0"/>
+  </xacro:hokuyo_urg04_laser>
   
 </robot>
