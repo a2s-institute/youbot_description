@@ -13,6 +13,8 @@
     <!-- front left wheel -->
     <gazebo reference="wheel_link_fl">
       <material value="youbot/Orange" />
+      <kp>1000000</kp>
+      <kd>100</kd>
     </gazebo>
     
     <gazebo reference="caster_link_fl">
@@ -22,6 +24,8 @@
     <!-- front right wheel -->
     <gazebo reference="wheel_link_fr">
       <material value="youbot/Orange" />
+      <kp>1000000</kp>
+      <kd>100</kd>
     </gazebo>
     
     <gazebo reference="caster_link_fr">   
@@ -31,6 +35,8 @@
     <!-- back left wheel -->
     <gazebo reference="wheel_link_bl">
       <material value="youbot/Orange" />
+      <kp>1000000</kp>
+      <kd>100</kd>
     </gazebo>
     
     <gazebo reference="caster_link_bl">
@@ -40,6 +46,8 @@
     <!-- back right wheel -->
     <gazebo reference="wheel_link_br">
       <material value="youbot/Orange" />
+      <kp>1000000</kp>
+      <kd>100</kd>
     </gazebo>
     
     <gazebo reference="caster_link_br">
@@ -53,7 +61,7 @@
         <odometryTopic>odom</odometryTopic>
         <odometryFrame>odom</odometryFrame>
         <odometryRate>100.0</odometryRate>
-        <robotBaseFrame>base_link</robotBaseFrame>
+        <robotBaseFrame>base_footprint</robotBaseFrame>
       </plugin>
     </gazebo>
   </xacro:macro>
