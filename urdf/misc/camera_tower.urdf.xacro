@@ -5,30 +5,30 @@
        xmlns:xacro="http://ros.org/wiki/xacro">
 
 
-  <property name="cam3d_tower_height" value="0.49" />
-  <property name="cam3d_tower_width" value="0.03" />
-  <property name="cam3d_tower_depth" value="0.03" />
+  <property name="camera_tower_height" value="0.49" />
+  <property name="camera_tower_width" value="0.03" />
+  <property name="camera_tower_depth" value="0.03" />
   
-  <xacro:macro name="cam3d_tower" params="name parent *origin">
+  <xacro:macro name="camera_tower" params="name parent *origin">
   	<link name="${name}_link">
       <inertial>
-        <mass value="0.01" />
-        <origin xyz="0 0 ${(cam3d_tower_height/2) - cam3d_tower_height}" rpy="0 0 0"/>
+        <mass value="0.5" />
+        <origin xyz="0 0 ${(camera_tower_height/2) - camera_tower_height}" rpy="0 0 0"/>
         <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001" />
       </inertial>
 
       <visual>
-        <origin xyz="0 0 ${cam3d_tower_height - (cam3d_tower_height/2)}" rpy="0 0 0" />
+        <origin xyz="0 0 ${camera_tower_height - (camera_tower_height/2)}" rpy="0 0 0" />
         <geometry>
-          <box size="${cam3d_tower_depth} ${cam3d_tower_width} ${cam3d_tower_height}"/>
+          <box size="${camera_tower_depth} ${camera_tower_width} ${camera_tower_height}"/>
         </geometry>
         <material name="LightGrey" />
       </visual>
 
       <collision>
-        <origin xyz="0 0 ${cam3d_tower_height - (cam3d_tower_height/2)}" rpy="0 0 0" />
+        <origin xyz="0 0 ${camera_tower_height - (camera_tower_height/2)}" rpy="0 0 0" />
         <geometry>
-           <box size="${cam3d_tower_depth} ${cam3d_tower_width} ${cam3d_tower_height}"/>
+           <box size="${camera_tower_depth} ${camera_tower_width} ${camera_tower_height}"/>
         </geometry>
       </collision >
     </link>
