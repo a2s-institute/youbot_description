@@ -6,8 +6,7 @@
 
 	<xacro:include filename="$(find youbot_description)/urdf/youbot_arm/arm.gazebo.xacro" />
 	<xacro:include filename="$(find youbot_description)/urdf/youbot_arm/arm.transmission.xacro" />
-        <xacro:include filename="$(find youbot_description)/urdf/youbot_arm/limits.urdf.xacro" />
-
+	<xacro:include filename="$(find youbot_description)/urdf/youbot_arm/limits.urdf.xacro" />
 
 	<xacro:macro name="youbot_arm" params="parent name *origin">
 
@@ -132,7 +131,7 @@
 			<axis xyz="0 1 0"/>
 			<dynamics damping="1" friction="1" />
 			<limit effort="${6}" velocity="${M_PI / 2.0}" lower="-${joint_3_limit}" upper="0"/>
-                        <safety_controller k_position="20" k_velocity="50" soft_lower_limit="-${joint_3_limit_soft}" soft_upper_limit="${threshold}" />
+      <safety_controller k_position="20" k_velocity="50" soft_lower_limit="-${joint_3_limit_soft}" soft_upper_limit="${threshold}" />
 		</joint>-->
 		<joint name="${name}_joint_3" type="revolute">
 			<origin xyz="0.000 0.000 0.155" rpy="0 ${146 * M_PI / 180} 0"/>
