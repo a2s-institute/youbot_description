@@ -22,7 +22,7 @@
         <geometry>
           <box size="${camera_tower_depth} ${camera_tower_width} ${camera_tower_height}"/>
         </geometry>
-        <material name="LightGrey" />
+        <material name="youBot/LightGrey" />
       </visual>
 
       <collision>

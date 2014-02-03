@@ -1,30 +1,30 @@
 <?xml version="1.0"?>
 <robot>
-  <material name="Orange">
+  <material name="youBot/Orange">
     <color rgba="1.0 0.4 0.0 1.0"/>
   </material>
-  <material name="Grey">
+  <material name="youBot/Grey">
     <color rgba="0.7 0.7 0.7 1.0"/>
   </material>
-  <material name="DarkGrey">
+  <material name="youBot/DarkGrey">
     <color rgba="0.3 0.3 0.3 1.0"/>
   </material>
-  <material name="White">
+  <material name="youBot/White">
     <color rgba="1.0 1.0 1.0 1.0"/>
   </material>
-  <material name="Black">
+  <material name="youBot/Black">
     <color rgba="0.0 0.0 0.0 1.0"/>
   </material>
-  <material name="Red">
+  <material name="youBot/Red">
     <color rgba="1.0 0.0 0.0 1.0"/>
   </material>
-  <material name="Green">
+  <material name="youBot/Green">
     <color rgba="0.0 1.0 0.0 1.0"/>
   </material>
-  <material name="Blue">
+  <material name="youBot/Blue">
     <color rgba="0.0 0.0 0.8 1.0"/>
   </material>
-  <material name="LightGrey">
+  <material name="youBot/LightGrey">
     <color rgba="0.82 0.82 0.82 1.0"/>
   </material>
 </robot>

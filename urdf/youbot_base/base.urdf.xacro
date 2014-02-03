@@ -4,10 +4,9 @@
        xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface" 
        xmlns:xacro="http://ros.org/wiki/xacro">
  
-  <!-- sensors -->
   <xacro:include filename="$(find youbot_description)/urdf/youbot_base/base.gazebo.xacro"/>
   <xacro:include filename="$(find youbot_description)/urdf/youbot_base/base.transmission.xacro"/>
-  
+
   <!-- simplified box collision geometry for base -->
   <property name="base_size_x" value="0.570"/>
   <property name="base_size_y" value="0.360"/>
@@ -52,7 +51,7 @@
         <geometry>
           <box size="0.001 0.001 0.001"/>
         </geometry>
-        <material name="Red"/>
+        <material name="youBot/Red"/>
       </visual>
       <collision>
         <origin xyz="0 0 ${-base_size_z / 2.0}" rpy="0 0 0"/>
@@ -78,7 +77,7 @@
         <geometry>
           <mesh filename="package://youbot_description/meshes/youbot_base/base.dae"/>
         </geometry>
-        <material name="DarkGrey"/>
+        <material name="youBot/DarkGrey"/>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -128,7 +127,7 @@
         <geometry>
           <sphere radius="${wheel_radius}"/>
         </geometry>
-        <material name="Orange"/>
+        <material name="youBot/Orange"/>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="${M_PI/2} 0 0"/>
@@ -177,7 +176,7 @@
           <!--<mesh filename="package://youbot_description/meshes/youbot_base/youbot_wheel.stl" />-->
           <sphere radius="${wheel_radius}"/>
         </geometry>
-        <material name="Orange"/>
+        <material name="youBot/Orange"/>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="${M_PI/2} 0 0"/>
@@ -227,7 +226,7 @@
           <!--<mesh filename="package://youbot_description/meshes/youbot_base/youbot_wheel.stl" />-->
           <sphere radius="${wheel_radius}"/>
         </geometry>
-        <material name="Orange"/>
+        <material name="youBot/Orange"/>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="${M_PI/2} 0 0"/>
@@ -276,7 +275,7 @@
           <!--<mesh filename="package://youbot_description/meshes/youbot_base/youbot_wheel.stl" />-->
           <sphere radius="${wheel_radius}"/>
         </geometry>
-        <material name="Orange"/>
+        <material name="youBot/Orange"/>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="${M_PI/2} 0 0"/>

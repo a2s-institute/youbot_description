@@ -32,7 +32,7 @@
 				<geometry>
 					<mesh filename="package://youbot_description/meshes/youbot_arm/arm0.dae" />
 				</geometry>
-				<material name="DarkGrey" />
+				<material name="youBot/DarkGrey" />
 			</visual>
 
 			<collision>
@@ -76,7 +76,7 @@
 				<geometry>
 					<mesh filename="package://youbot_description/meshes/youbot_arm/arm1.dae" />
 				</geometry>
-				<!--<material name="Orange" />-->
+				<material name="youBot/Orange" />
 			</visual>
 			
 			<collision>
@@ -112,7 +112,6 @@
 				<geometry>
 					<mesh filename="package://youbot_description/meshes/youbot_arm/arm2.dae" />
 				</geometry>
-				<material name="Orange" />
 			</visual>
 			
 			<collision>
@@ -156,7 +155,7 @@
 				<geometry>
 					<mesh filename="package://youbot_description/meshes/youbot_arm/arm3.dae" />
 				</geometry>
-				<material name="Orange" />
+				<material name="youBot/Orange" />
 			</visual>
 			
 			<collision>
@@ -192,7 +191,7 @@
 				<geometry>
 					<mesh filename="package://youbot_description/meshes/youbot_arm/arm4.dae" />
 				</geometry>
-				<material name="Orange" />
+				<material name="youBot/Orange" />
 			</visual>
 			
 			<collision>
@@ -228,7 +227,7 @@
 				<geometry>
 					<mesh filename="package://youbot_description/meshes/youbot_arm/arm5.dae" />
 				</geometry>
-				<material name="DarkGrey" />
+				<material name="youBot/DarkGrey" />
 			</visual>
 			
 			<collision>
