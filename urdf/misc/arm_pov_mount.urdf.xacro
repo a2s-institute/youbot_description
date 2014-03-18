@@ -21,7 +21,7 @@
       </visual>
 
       <collision>
-        <origin xyz="0 0 0" rpy="0 0 0" />
+        <origin xyz="-0.015 0.04 -0.055" rpy="0 0 -1.57079633" />
         <geometry>
 			<mesh filename="package://youbot_description/meshes/sensors/arm_pov_mount.dae" scale="0.0001 0.0001 0.0001"/>
         </geometry>
