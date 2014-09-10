@@ -13,7 +13,9 @@
         <hardwareInterface>EffortJointInterface</hardwareInterface>
         <mechanicalReduction>1</mechanicalReduction>
       </actuator>
-      <joint name="${name}_finger_joint_l"/>
+      <joint name="${name}_finger_joint_l">
+        <hardwareInterface>EffortJointInterface</hardwareInterface>
+      </joint>
     </transmission>
   
     <transmission name="${name}_finger_r_trans">
@@ -22,7 +24,9 @@
         <hardwareInterface>EffortJointInterface</hardwareInterface>
         <mechanicalReduction>1</mechanicalReduction>
       </actuator>
-      <joint name="${name}_finger_joint_r"/>
+      <joint name="${name}_finger_joint_r">
+        <hardwareInterface>EffortJointInterface</hardwareInterface>
+      </joint>
     </transmission>
 
   </xacro:macro>

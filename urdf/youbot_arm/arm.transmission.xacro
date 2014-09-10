@@ -14,7 +14,9 @@
         <hardwareInterface>EffortJointInterface</hardwareInterface>
         <mechanicalReduction>1</mechanicalReduction>
       </actuator>
-      <joint name="${name}_joint_1"/>
+      <joint name="${name}_joint_1">
+        <hardwareInterface>EffortJointInterface</hardwareInterface>
+      </joint>
     </transmission>
  
     <transmission name="${name}_trans_2">
@@ -23,7 +25,9 @@
         <hardwareInterface>EffortJointInterface</hardwareInterface>
         <mechanicalReduction>1</mechanicalReduction>
       </actuator>
-      <joint name="${name}_joint_2"/>
+      <joint name="${name}_joint_2">
+        <hardwareInterface>EffortJointInterface</hardwareInterface>
+      </joint>
     </transmission>
  
     <transmission name="${name}_trans_3">
@@ -32,7 +36,9 @@
         <hardwareInterface>EffortJointInterface</hardwareInterface>
         <mechanicalReduction>1</mechanicalReduction>
       </actuator>
-      <joint name="${name}_joint_3"/>
+      <joint name="${name}_joint_3">
+        <hardwareInterface>EffortJointInterface</hardwareInterface>
+      </joint>
     </transmission>
  
     <transmission name="${name}_trans_4">
@@ -41,7 +47,9 @@
         <hardwareInterface>EffortJointInterface</hardwareInterface>
         <mechanicalReduction>1</mechanicalReduction>
       </actuator>
-      <joint name="${name}_joint_4"/>
+      <joint name="${name}_joint_4">
+        <hardwareInterface>EffortJointInterface</hardwareInterface>
+      </joint>
     </transmission>
  
     <transmission name="${name}_trans_5">
@@ -50,7 +58,9 @@
         <hardwareInterface>EffortJointInterface</hardwareInterface>
         <mechanicalReduction>1</mechanicalReduction>
       </actuator>
-      <joint name="${name}_joint_5"/>
+      <joint name="${name}_joint_5">
+        <hardwareInterface>EffortJointInterface</hardwareInterface>
+      </joint>
     </transmission>
 
   </xacro:macro>

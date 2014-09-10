@@ -16,7 +16,9 @@
         <hardwareInterface>VelocityJointInterface</hardwareInterface>
         <mechanicalReduction>${wheel_mechanical_reduction}</mechanicalReduction>
       </actuator>
-      <joint name="wheel_joint_fl" />
+      <joint name="wheel_joint_fl">
+        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+      </joint>
     </transmission>
 
     <transmission name="caster_trans_fl">
@@ -25,7 +27,9 @@
         <hardwareInterface>VelocityJointInterface</hardwareInterface>
         <mechanicalReduction>${caster_mechanical_reduction}</mechanicalReduction>
       </actuator>
-      <joint name="caster_joint_fl" />
+      <joint name="caster_joint_fl">
+        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+      </joint>
     </transmission>
 
     <!-- front right wheel -->
@@ -35,7 +39,9 @@
         <hardwareInterface>VelocityJointInterface</hardwareInterface>
         <mechanicalReduction>${wheel_mechanical_reduction}</mechanicalReduction>
       </actuator>
-      <joint name="wheel_joint_fr" />
+      <joint name="wheel_joint_fr">
+        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+      </joint>
     </transmission>
 
     <transmission name="caster_trans_fr">
@@ -44,7 +50,9 @@
         <hardwareInterface>VelocityJointInterface</hardwareInterface>
         <mechanicalReduction>${caster_mechanical_reduction}</mechanicalReduction>
       </actuator>
-      <joint name="caster_joint_fr" />
+      <joint name="caster_joint_fr">
+        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+      </joint>
     </transmission>
 
     <!-- back left wheel -->
@@ -54,7 +62,9 @@
         <hardwareInterface>VelocityJointInterface</hardwareInterface>
         <mechanicalReduction>${wheel_mechanical_reduction}</mechanicalReduction>
       </actuator>
-      <joint name="wheel_joint_bl" />
+      <joint name="wheel_joint_bl">
+        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+      </joint>
     </transmission>
 
     <transmission name="caster_trans_bl">
@@ -63,7 +73,9 @@
         <hardwareInterface>VelocityJointInterface</hardwareInterface>
         <mechanicalReduction>${caster_mechanical_reduction}</mechanicalReduction>
       </actuator>
-      <joint name="caster_joint_bl" />
+      <joint name="caster_joint_bl">
+        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+      </joint>
     </transmission>
 
     <!-- back right wheel -->
@@ -73,7 +85,9 @@
         <hardwareInterface>VelocityJointInterface</hardwareInterface>
         <mechanicalReduction>${wheel_mechanical_reduction}</mechanicalReduction>
       </actuator>
-      <joint name="wheel_joint_br" />
+      <joint name="wheel_joint_br">
+        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+      </joint>
     </transmission>
 
     <transmission name="caster_trans_br">
@@ -82,7 +96,9 @@
         <hardwareInterface>VelocityJointInterface</hardwareInterface>
         <mechanicalReduction>${caster_mechanical_reduction}</mechanicalReduction>
       </actuator>
-      <joint name="caster_joint_br" />
+      <joint name="caster_joint_br">
+        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+      </joint>
     </transmission>
 
   </xacro:macro>
