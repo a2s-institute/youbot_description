@@ -22,8 +22,8 @@
   <property name="wheel_offset_y" value="0.0"/>
   <property name="wheel_offset_z" value="0.0"/>
 
-  <property name="wheel_mass" value="0.4"/>
-  <property name="wheel_radius" value="0.05"/>
+  <property name="wheel_mass" value="1.4"/>
+  <property name="wheel_radius" value="0.0475"/>
   <property name="wheel_length" value="0.005"/>
 
   <property name="caster_joint_damping" value="1.0"/>
