@@ -45,16 +45,6 @@
     <gazebo reference="caster_link_br">
     </gazebo>
 
-    <!-- position controller -->
-    <gazebo>
-      <plugin name="base_controller" filename="libgazebo_ros_planar_move.so">
-        <commandTopic>cmd_vel</commandTopic>
-        <odometryTopic>odom</odometryTopic>
-        <odometryFrame>odom</odometryFrame>
-        <odometryRate>100.0</odometryRate>
-        <robotBaseFrame>base_footprint</robotBaseFrame>
-      </plugin>
-    </gazebo>
   </xacro:macro>
 
 </robot>
