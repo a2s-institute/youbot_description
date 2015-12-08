@@ -6,7 +6,6 @@
 
 	<property name="wheel_mechanical_reduction" value="${624/35 * 80/18}" />
 	<property name="caster_mechanical_reduction" value="${624/35 * 80/18}" />
-  <property name="unused_variable_name" value="0.360" />
 
 	<xacro:macro name="youbot_base_transmission">
 	<!-- front left wheel -->
