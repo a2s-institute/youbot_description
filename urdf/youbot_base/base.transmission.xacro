@@ -12,22 +12,22 @@
     <transmission name="wheel_trans_fl">
       <type>transmission_interface/SimpleTransmission</type>
       <actuator name="wheel_motor_fl">
-        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+        <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
         <mechanicalReduction>${wheel_mechanical_reduction}</mechanicalReduction>
       </actuator>
       <joint name="wheel_joint_fl">
-        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+        <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
       </joint>
     </transmission>
 
     <transmission name="caster_trans_fl">
       <type>transmission_interface/SimpleTransmission</type>
        <actuator name="caster_motor_fl">
-        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+        <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
         <mechanicalReduction>${caster_mechanical_reduction}</mechanicalReduction>
       </actuator>
       <joint name="caster_joint_fl">
-        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+        <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
       </joint>
     </transmission>
 
@@ -35,22 +35,22 @@
     <transmission name="wheel_trans_fr">
       <type>transmission_interface/SimpleTransmission</type>
       <actuator name="wheel_motor_fr">
-        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+        <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
         <mechanicalReduction>${wheel_mechanical_reduction}</mechanicalReduction>
       </actuator>
       <joint name="wheel_joint_fr">
-        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+        <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
       </joint>
     </transmission>
 
     <transmission name="caster_trans_fr">
       <type>transmission_interface/SimpleTransmission</type>
       <actuator name="caster_motor_fr" >
-        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+        <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
         <mechanicalReduction>${caster_mechanical_reduction}</mechanicalReduction>
       </actuator>
       <joint name="caster_joint_fr">
-        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+        <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
       </joint>
     </transmission>
 
@@ -58,22 +58,22 @@
     <transmission name="wheel_trans_bl">
       <type>transmission_interface/SimpleTransmission</type>
       <actuator name="wheel_motor_bl" >
-        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+        <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
         <mechanicalReduction>${wheel_mechanical_reduction}</mechanicalReduction>
       </actuator>
       <joint name="wheel_joint_bl">
-        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+        <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
       </joint>
     </transmission>
 
     <transmission name="caster_trans_bl">
       <type>transmission_interface/SimpleTransmission</type>
       <actuator name="caster_motor_bl" >
-        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+        <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
         <mechanicalReduction>${caster_mechanical_reduction}</mechanicalReduction>
       </actuator>
       <joint name="caster_joint_bl">
-        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+        <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
       </joint>
     </transmission>
 
@@ -81,22 +81,22 @@
     <transmission name="wheel_trans_br">
       <type>transmission_interface/SimpleTransmission</type>
       <actuator name="wheel_motor_br" >
-        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+        <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
         <mechanicalReduction>${wheel_mechanical_reduction}</mechanicalReduction>
       </actuator>
       <joint name="wheel_joint_br">
-        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+        <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
       </joint>
     </transmission>
 
     <transmission name="caster_trans_br">
       <type>transmission_interface/SimpleTransmission</type>
       <actuator name="caster_motor_br" >
-        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+        <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
         <mechanicalReduction>${caster_mechanical_reduction}</mechanicalReduction>
       </actuator>
       <joint name="caster_joint_br">
-        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+        <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
       </joint>
     </transmission>
 
