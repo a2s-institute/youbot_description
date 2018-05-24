@@ -59,9 +59,5 @@
   <xacro:hokuyo_urg04_laser name="base_laser_front" parent="base" ros_topic="scan_front" update_rate="10" min_angle="-1.57" max_angle="1.57">
     <origin xyz="0.3 0 -0.03" rpy="0 0 0"/>
   </xacro:hokuyo_urg04_laser>
-
-  <gazebo>
-      <plugin name="gazebo_ros_controller" filename="libgazebo_ros_control.so" />
-  </gazebo>
   
 </robot>
