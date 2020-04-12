@@ -14,7 +14,7 @@
       <kp>1000000</kp>
       <kd>100</kd>
     </gazebo>
-    
+
     <gazebo reference="caster_link_fl">
     </gazebo>
 
@@ -23,8 +23,8 @@
       <kp>1000000</kp>
       <kd>100</kd>
     </gazebo>
-    
-    <gazebo reference="caster_link_fr">   
+
+    <gazebo reference="caster_link_fr">
     </gazebo>
 
     <!-- back left wheel -->
@@ -32,7 +32,7 @@
       <kp>1000000</kp>
       <kd>100</kd>
     </gazebo>
-    
+
     <gazebo reference="caster_link_bl">
     </gazebo>
 
@@ -41,7 +41,7 @@
       <kp>1000000</kp>
       <kd>100</kd>
     </gazebo>
-    
+
     <gazebo reference="caster_link_br">
     </gazebo>
 

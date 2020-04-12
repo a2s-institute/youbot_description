@@ -4,7 +4,12 @@
        xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface">
 
   <gazebo>
-    <plugin name="gazebo_ros_controller" filename="libgazebo_ros_control.so" />
+    <plugin name="gazebo_ros_controller" filename="libgazebo_ros_control.so">
+
+    <legacyModeNS>true</legacyModeNS>
+
+
+    </plugin>
   </gazebo>
 
 </robot>

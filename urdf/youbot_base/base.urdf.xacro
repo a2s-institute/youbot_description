@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<robot xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor" 
-       xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller" 
-       xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface" 
+<robot xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
+       xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
+       xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
        xmlns:xacro="http://www.ros.org/wiki/xacro/#interface">
- 
+
   <xacro:include filename="$(find youbot_description)/urdf/youbot_base/base.gazebo.xacro"/>
   <xacro:include filename="$(find youbot_description)/urdf/youbot_base/base.transmission.xacro"/>
 
@@ -41,11 +41,12 @@
 
   <xacro:macro name="youbot_base" params="name">
     <link name="${name}_footprint">
-      <inertial>
+      <!--<inertial>
         <mass value="0.1"/>
         <origin xyz="0 0 ${-base_size_z / 2.0}" rpy="0 0 0"/>
         <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
       </inertial>
+    -->
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
