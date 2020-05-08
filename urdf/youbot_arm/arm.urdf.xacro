@@ -174,7 +174,7 @@
 			<child link="${name}_link_4"/>
 			<axis xyz="0 1 0" />
 			<!--<calibration rising="${arm_4_ref}" falling="${arm_4_ref}"/>-->
-			<dynamics damping="1" friction="1" />
+			<dynamics damping="1" friction="0.5" />
 			<limit effort="${2.0}" velocity="${M_PI / 2.0}" lower="0" upper="${joint_4_limit}"/>
 			<!--safety_controller k_position="20" k_velocity="100" soft_lower_limit="0" soft_upper_limit="${joint_4_limit_soft}" /-->
 		</joint>
@@ -210,7 +210,7 @@
 			<child link="${name}_link_5"/>
 			<axis xyz="0 0 -1" />
 			<!--<calibration rising="${arm_5_ref}" falling="${arm_5_ref}"/>-->
-			<dynamics damping="1" friction="1" />
+			<dynamics damping="0.5" friction="0.5" />
 			<limit effort="${1.0}" velocity="${M_PI / 2.0}" lower="0" upper="${joint_5_limit}" />
       <!--safety_controller k_position="20" k_velocity="100" soft_lower_limit="0" soft_upper_limit="${joint_5_limit_soft}" /-->
 		</joint>
