@@ -1,13 +1,7 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
 project(youbot_description)
 
-find_package(catkin REQUIRED)
-
-catkin_package(
-  CATKIN_DEPENDS
-)
-
-install(DIRECTORY controller/ DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/controller)
-install(DIRECTORY controller/ DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/meshes)
-install(DIRECTORY controller/ DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/robots)
-install(DIRECTORY controller/ DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf)
+install(DIRECTORY controller/ DESTINATION share/${PROJECT_NAME}/controller)
+install(DIRECTORY controller/ DESTINATION share/${PROJECT_NAME}/meshes)
+install(DIRECTORY controller/ DESTINATION share/${PROJECT_NAME}/robots)
+install(DIRECTORY controller/ DESTINATION share/${PROJECT_NAME}/urdf)
