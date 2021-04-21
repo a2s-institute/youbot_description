@@ -14,4 +14,10 @@
 
   <author email="frederik.hegger@h-brs.de">Frederik Heger</author> -->
 
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+
 </package>
