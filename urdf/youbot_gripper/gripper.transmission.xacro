@@ -10,7 +10,6 @@
     <transmission name="${name}_finger_l_trans">
       <type>transmission_interface/SimpleTransmission</type>
       <actuator name="${name}_finger_l_motor">
-        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
         <mechanicalReduction>1</mechanicalReduction>
       </actuator>
       <joint name="${name}_finger_joint_l">
@@ -21,7 +20,6 @@
     <transmission name="${name}_finger_r_trans">
       <type>transmission_interface/SimpleTransmission</type>
       <actuator name="${name}_finger_r_motor">
-        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
         <mechanicalReduction>1</mechanicalReduction>
       </actuator>
       <joint name="${name}_finger_joint_r">
